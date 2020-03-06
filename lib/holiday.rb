@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
               }
           holidays_string = new_array.join(" ")
           string = stations_keys[1].join(", ")
-          puts "#{holidays_string} #{string}"
+          puts "  #{holidays_string} #{string}"
           string = stations_keys[1].join(", ")
           }
       }
