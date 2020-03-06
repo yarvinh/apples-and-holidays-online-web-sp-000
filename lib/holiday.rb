@@ -59,27 +59,21 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.map {|key,value|
-        stations = key.to_s << ":"
-        capitalized_word = stations.capitalize!
-        puts capitalized_word
-        value.map{|stations_keys|
-            stations_keys[0] = stations_keys[0].to_s << ":"
-            key = stations_keys[0].capitalize!
-            caracter_array = key.split("")
-            holidays_string = ""
-            new_array = caracter_array.map{|carater|
-                if carater == "_"
-                    holidays_string += " "
-                else
-                    holidays_string += carater
-                end
-            }
-    string = stations_keys[1].join(", ")
-      #  puts capitalized_word
-      puts "  #{holidays_string} #{string}"
-       }
-    }
-  # winter_capitalize = holiday_hash.keys[0].to_s << ":"
+          stations = key.to_s << ":"
+          capitalized_word = stations.capitalize!
+          puts capitalized_word
+          value.map{|stations_keys|
+              stations_keys[0] = stations_keys[0].to_s << ":"
+              new_array = []
+              stations_keys[0].split("_").map {|capitalize|
+                  new_array.push(capitalize.capitalize!)
+              }
+          holidays_string = new_array.join(" ")
+          string = stations_keys[1].join(", ")
+          puts "#{holidays_string} #{string}"
+          string = stations_keys[1].join(", ")
+          }
+      }ter_capitalize = holiday_hash.keys[0].to_s << ":"
   # puts winter_capitalize.capitalize!
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
