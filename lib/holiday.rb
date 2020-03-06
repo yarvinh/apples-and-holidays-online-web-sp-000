@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
           puts "#{holidays_string} #{string}"
           string = stations_keys[1].join(", ")
           }
-      }ter_capitalize = holiday_hash.keys[0].to_s << ":"
+      }
   # puts winter_capitalize.capitalize!
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
