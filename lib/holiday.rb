@@ -86,7 +86,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  puts holiday_hash[:summer].keys.class
-   puts holiday_hash[:spring].keys.class
+    holiday_hash[:summer].keys.class
+    holiday_hash[:spring].keys.class
 
 end
