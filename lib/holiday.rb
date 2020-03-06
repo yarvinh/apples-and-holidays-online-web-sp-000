@@ -86,8 +86,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  holiday_hash.map {|station, station_values|
-    station_values
-  }
+  puts holiday_hash[:summer].keys.class
+   puts holiday_hash[:spring].keys.class
 
 end
